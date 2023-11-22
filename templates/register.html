@@ -1,0 +1,39 @@
+    {% extends "base.html" %}
+
+    {% block content %}
+    <form autocomplete="off">
+      <div class="mb-1">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="nome">
+      </div>
+      <div class="mb-1">
+        <label for="cognome" class="form-label">Cognome</label>
+        <input type="text" class="form-control" id="cognome">
+      </div>
+      <div class="mb-1">
+        <label for="sesso" class="form-label">Sesso</label>
+        <select class="form-select" id="inputGroupSelect04" aria-label="Sesso">
+          <option selected>Scegli...</option>
+          <option value="maschio">Maschio</option>
+          <option value="femmina">Femmina</option>
+        </select>
+      </div>
+      <div class="mb-1">
+        <label class="form-label" for="dataNascita">Data di nascita</label>
+        <input type="date" class="form-control" id="dataNascita">
+      </div>
+      <div class="mb-1 autocomplete">
+        <label for="luogoNascita" class="form-label">Luogo di nascita</label>
+        <input type="text" class="form-control" id="luogoNascita">
+      </div>
+      <div class="mb-1">
+        <label for="cf" class="form-label">Codice fiscale</label>
+        <input type="text" class="form-control" id="cf">
+      </div>
+      <div class="mb-2">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password">
+      </div>
+      <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    </form>
+{% endblock %}

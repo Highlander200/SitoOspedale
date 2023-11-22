@@ -1,0 +1,63 @@
+      {% extends "base.html" %}
+
+      {% block content %}
+        <h1>Prenota le nostre visite specialistiche:</h1><br>
+        <table class="table text-center tabella table-responsive mt-3">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Specializzazione</th>
+                    <th scope="col">Descrizione</th>
+                    <th scope="col">Prenota</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>
+                        Gianfranco Di Svevia
+                    </td>
+                    <td>
+                        Cardiologo
+                    </td>
+                    <td>
+                        Cardiologo esperto con un approccio empatico.
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-primary">Prenota Ora</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>
+                        Marco Bianchi
+                    </td>
+                    <td>
+                        Chirurgo ortopedico
+                    </td>
+                    <td>
+                        Chirurgo ortopedico rinomato per riparazioni articolari e ossee.
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-primary">Prenota Ora</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>
+                        Lucia Ferrara
+                    </td>
+                    <td>
+                        Psichiatra
+                    </td>
+                    <td>
+                        Psichiatra dedicata al benessere mentale dei pazienti.
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-primary">Prenota Ora</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    {% endblock %}

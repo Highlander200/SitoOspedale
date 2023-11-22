@@ -1,0 +1,53 @@
+      {% extends "base.html" %}
+
+      {% block content %}
+        <h1>Prenota le nostre visite specialistiche:</h1><br>
+        <table class="table text-center tabella table-responsive mt-3">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Specializzazione</th>
+                    <th scope="col">Foto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>
+                        Gianfranco Di Svevia
+                    </td>
+                    <td>
+                        Cardiologo
+                    </td>
+                    <td>
+                        <img src="{{url_for('static',filename='img/DiSvevia.jpg')}}" class="imgTable">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>
+                        Marco Bianchi
+                    </td>
+                    <td>
+                        Chirurgo ortopedico
+                    </td>
+                    <td>
+                        <img src="{{url_for('static',filename='img/Bianchi.jpg')}}" class="imgTable">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>
+                        Lucia Ferrara
+                    </td>
+                    <td>
+                        Psichiatra
+                    </td>
+                    <td>
+                        <img src="{{url_for('static',filename='img/Ferrara.jpg')}}" class="imgTable">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    {% endblock %}

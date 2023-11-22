@@ -1,0 +1,45 @@
+      {% extends "base.html" %}
+
+      {% block content %}
+        <h1>Le nostre analisi:</h1>
+        <h2>1. Emocromo completo</h2>
+        <p>
+            L'emocromo completo è un esame del sangue che fornisce informazioni sulla quantità e sulla salute delle
+            cellule del sangue. I principali parametri misurati includono l'emoglobina, che trasporta l'ossigeno nel
+            sangue, l'ematocrito che indica la percentuale di volume occupato dalle cellule del sangue, il numero di
+            globuli rossi responsabili del trasporto dell'ossigeno, il numero di globuli bianchi che combattono le
+            infezioni, e il numero di piastrine coinvolte nella coagulazione del sangue. La formula leucocitaria
+            fornisce la percentuale di diversi tipi di globuli bianchi. Altri parametri come il volume corpuscolare
+            medio, l'emoglobina corpuscolare media e la concentrazione di emoglobina corpuscolare media forniscono
+            ulteriori dettagli sulla dimensione e sulla concentrazione dell'emoglobina nei globuli rossi. Questi dati
+            sono essenziali per diagnosticare o monitorare condizioni come anemie, infezioni e disordini della
+            coagulazione.
+        </p>
+        <h2>2. Analisi delle urine</h2>
+        <p>
+            L'analisi delle urine fornisce informazioni cruciali sullo stato del sistema urinario e può rivelare
+            indicazioni su condizioni mediche. Esaminando aspetti come il colore e l'aspetto, la densità urinaria, il
+            pH, la presenza di proteine, glucosio, corpi chetonici, bilirubina e urobilinogeno, è possibile ottenere una
+            panoramica della funzionalità renale, del metabolismo e dello stato di idratazione dell'organismo. Inoltre,
+            la presenza di elementi come emazie, leucociti e cilindri può suggerire eventuali infezioni o problemi
+            renali. L'analisi delle urine è uno strumento diagnostico importante per valutare la salute generale e
+            identificare eventuali condizioni mediche.
+        </p>
+        <h2>3. Profilo lipidico</h2>
+        <p>
+
+            Il profilo lipidico è un esame del sangue che fornisce informazioni sul livello di lipidi nel sangue. Questo
+            include il colesterolo totale, il colesterolo LDL (lipoproteine a bassa densità), il colesterolo HDL
+            (lipoproteine ad alta densità) e i trigliceridi. Il colesterolo totale è la somma di LDL, HDL e altre
+            lipoproteine. Il colesterolo LDL è spesso chiamato "colesterolo cattivo" perché un eccesso può depositarsi
+            sulle pareti delle arterie, aumentando il rischio di malattie cardiovascolari. Al contrario, il colesterolo
+            HDL è noto come "colesterolo buono" perché può aiutare a rimuovere il colesterolo in eccesso dalle arterie.
+            I trigliceridi sono un tipo di grasso nel sangue, e livelli elevati possono essere collegati a problemi
+            cardiaci. L'analisi del profilo lipidico è utile per valutare il rischio di malattie cardiovascolari e
+            determinare eventuali interventi necessari per mantenere livelli lipidici sani.
+        </p>
+        <h3><a href="{{url_for('prenotaAnalisi')}}"
+                class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Prenota
+                ora!</a></h3>
+
+    {% endblock %}
