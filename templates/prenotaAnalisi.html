@@ -12,42 +12,21 @@
                 </tr>
             </thead>
             <tbody>
+                {% for id in analisi %}
+                {% set analisa = analisi[id] %}
                 <tr>
-                    <th scope="row">1</th>
+                    <th scope="row">{{id}}</th>
                     <td>
-                        Emocromo completo
+                        {{analisa[0]}}
                     </td>
                     <td>
-                        Misura delle cellule del sangue per diagnosticare anemie e infezioni.
+                        {{analisa[2]}}
                     </td>
                     <td>
                         <button type="button" class="btn btn-primary">Prenota Ora</button>
                     </td>
                 </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>
-                        Analisi delle urine
-                    </td>
-                    <td>
-                        Esame per rilevare infezioni urinarie, calcoli renali e problemi renali o metabolici.
-                    </td>
-                    <td>
-                        <button type="button" class="btn btn-primary">Prenota Ora</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>
-                        Profilo lipidico
-                    </td>
-                    <td>
-                        Valuta i livelli di colesterolo e trigliceridi per valutare il rischio cardiovascolare.
-                    </td>
-                    <td>
-                        <button type="button" class="btn btn-primary">Prenota Ora</button>
-                    </td>
-                </tr>
+                {% endfor %}
             </tbody>
         </table>
     {% endblock %}

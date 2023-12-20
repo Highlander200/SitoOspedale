@@ -1,7 +1,7 @@
       {% extends "base.html" %}
 
       {% block content %}
-        <h1>Prenota le nostre visite specialistiche:</h1><br>
+        <h1>I nostri medici</h1><br>
         <table class="table text-center tabella table-responsive mt-3">
             <thead>
                 <tr>
@@ -12,42 +12,21 @@
                 </tr>
             </thead>
             <tbody>
+                {% for id in medici %}
                 <tr>
-                    <th scope="row">1</th>
+                    {% set medico = medici[id] %}
+                    <th scope="row">{{id}}</th>
                     <td>
-                        Gianfranco Di Svevia
+                        {{medico[0]}}
                     </td>
                     <td>
-                        Cardiologo
+                        {{medico[1]}}
                     </td>
                     <td>
-                        <img src="{{url_for('static',filename='img/DiSvevia.jpg')}}" class="imgTable">
+                        <img src="{{url_for('static',filename=medico[2])}}" class="imgTable">
                     </td>
                 </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>
-                        Marco Bianchi
-                    </td>
-                    <td>
-                        Chirurgo ortopedico
-                    </td>
-                    <td>
-                        <img src="{{url_for('static',filename='img/Bianchi.jpg')}}" class="imgTable">
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>
-                        Lucia Ferrara
-                    </td>
-                    <td>
-                        Psichiatra
-                    </td>
-                    <td>
-                        <img src="{{url_for('static',filename='img/Ferrara.jpg')}}" class="imgTable">
-                    </td>
-                </tr>
+                {% endfor %}
             </tbody>
         </table>
     {% endblock %}
