@@ -7,57 +7,26 @@
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Nome</th>
-                    <th scope="col">Specializzazione</th>
                     <th scope="col">Descrizione</th>
                     <th scope="col">Prenota</th>
                 </tr>
             </thead>
             <tbody>
+                {% for id in visite %}
+                {% set visita = visite[id] %}
                 <tr>
-                    <th scope="row">1</th>
+                    <th scope="row">{{id}}</th>
                     <td>
-                        Gianfranco Di Svevia
+                        {{visita[0]}}
                     </td>
                     <td>
-                        Cardiologo
-                    </td>
-                    <td>
-                        Cardiologo esperto con un approccio empatico.
+                        {{visita[2]}}
                     </td>
                     <td>
                         <button type="button" class="btn btn-primary">Prenota Ora</button>
                     </td>
                 </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>
-                        Marco Bianchi
-                    </td>
-                    <td>
-                        Chirurgo ortopedico
-                    </td>
-                    <td>
-                        Chirurgo ortopedico rinomato per riparazioni articolari e ossee.
-                    </td>
-                    <td>
-                        <button type="button" class="btn btn-primary">Prenota Ora</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>
-                        Lucia Ferrara
-                    </td>
-                    <td>
-                        Psichiatra
-                    </td>
-                    <td>
-                        Psichiatra dedicata al benessere mentale dei pazienti.
-                    </td>
-                    <td>
-                        <button type="button" class="btn btn-primary">Prenota Ora</button>
-                    </td>
-                </tr>
+                {% endfor %}
             </tbody>
         </table>
     {% endblock %}
